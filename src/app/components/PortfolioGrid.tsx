@@ -1,133 +1,134 @@
 import { PortfolioCard } from './PortfolioCard';
+import { COFFEE_PRODUCT_IMAGES } from '../content/coffeeProductImages';
 
 const projects = [
   {
     id: 1,
-    name: "Fashion Forward",
+    name: "Morning Ritual",
     year: "2024",
-    type: "Photography",
-    client: "Vogue Studio",
-    image: "https://images.unsplash.com/photo-1571513722275-4b41940f54b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzYzOTc0MzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Brand",
+    client: "Roast & Co.",
+    image: COFFEE_PRODUCT_IMAGES[0]
   },
   {
     id: 2,
-    name: "Urban Lines",
+    name: "Single Origin",
     year: "2024",
-    type: "Product Design",
-    client: "Minimal Co.",
-    image: "https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwZGVzaWdufGVufDF8fHx8MTc2MzkwMzczNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Packaging",
+    client: "Highland Beans",
+    image: COFFEE_PRODUCT_IMAGES[1]
   },
   {
     id: 3,
-    name: "Nordic Architecture",
+    name: "Bean to Cup",
     year: "2023",
-    type: "Architecture",
-    client: "Nordic Build",
-    image: "https://images.unsplash.com/photo-1663940019982-c14294717dbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBidWlsZGluZ3xlbnwxfHx8fDE3NjM5MTcyMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Campaign",
+    client: "Artisan Roasters",
+    image: COFFEE_PRODUCT_IMAGES[2]
   },
   {
     id: 4,
-    name: "Creative Space",
+    name: "Cold Brew Line",
     year: "2024",
-    type: "Interior Design",
-    client: "Studio Lab",
-    image: "https://images.unsplash.com/photo-1554941829-202a0b2403b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHN0dWRpb3xlbnwxfHx8fDE3NjM5NzU5OTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Product",
+    client: "Urban Café Lab",
+    image: COFFEE_PRODUCT_IMAGES[3]
   },
   {
     id: 5,
-    name: "Brand Evolution",
+    name: "House Blend",
     year: "2023",
-    type: "Branding",
-    client: "Modern Corp",
-    image: "https://images.unsplash.com/photo-1548094990-c16ca90f1f0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZGluZyUyMGRlc2lnbnxlbnwxfHx8fDE3NjM5MTE2NTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Identity",
+    client: "Neighborhood Roastery",
+    image: COFFEE_PRODUCT_IMAGES[4]
   },
   {
     id: 6,
-    name: "Luxury Living",
+    name: "Espresso Bar",
     year: "2024",
-    type: "Interior Design",
-    client: "Elite Homes",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbnxlbnwxfHx8fDE3NjM5MTkzNDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Spatial",
+    client: "Third Wave Collective",
+    image: COFFEE_PRODUCT_IMAGES[5]
   },
   {
     id: 7,
-    name: "Pure Essence",
-    year: "2023",
-    type: "Packaging",
-    client: "Essence Beauty",
-    image: "https://images.unsplash.com/photo-1720762224315-439072aa22c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWNrYWdpbmclMjBkZXNpZ258ZW58MXx8fHwxNzYzOTYwNzYyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    name: "Nitro Series",
+    year: "2024",
+    type: "Launch",
+    client: "Cascade Coffee",
+    image: COFFEE_PRODUCT_IMAGES[0]
   },
   {
     id: 8,
-    name: "Digital Realm",
-    year: "2024",
-    type: "Digital Art",
-    client: "Meta Studios",
-    image: "https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwYXJ0fGVufDF8fHx8MTc2MzkwOTA4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    name: "Cupping Room",
+    year: "2023",
+    type: "Photography",
+    client: "Terroir Lab",
+    image: COFFEE_PRODUCT_IMAGES[1]
   },
   {
     id: 9,
-    name: "Minimalist Vision",
-    year: "2023",
-    type: "Photography",
-    client: "Frame Gallery",
-    image: "https://images.unsplash.com/photo-1643649215570-6f61cddc3acf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwcGhvdG9ncmFwaHl8ZW58MXx8fHwxNzYzOTcyNjg3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    name: "Pour-Over Kit",
+    year: "2024",
+    type: "E-commerce",
+    client: "Slow Drip Co.",
+    image: COFFEE_PRODUCT_IMAGES[2]
   },
   {
     id: 10,
-    name: "Digital Interface",
-    year: "2024",
-    type: "Web Design",
-    client: "Tech Innovate",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzYzOTI2Njc2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    name: "Micro-Lot",
+    year: "2023",
+    type: "Editorial",
+    client: "Altitude Roasters",
+    image: COFFEE_PRODUCT_IMAGES[3]
   },
   {
     id: 11,
-    name: "Visual Identity",
-    year: "2023",
-    type: "Graphic Design",
-    client: "Brand Lab",
-    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWdufGVufDF8fHx8MTc2MzkwMTc3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    name: "Café Identity",
+    year: "2024",
+    type: "Branding",
+    client: "Main Street Espresso",
+    image: COFFEE_PRODUCT_IMAGES[4]
   },
   {
     id: 12,
-    name: "Magazine Spread",
+    name: "Subscription Box",
     year: "2024",
-    type: "Editorial",
-    client: "Design Weekly",
-    image: "https://images.unsplash.com/photo-1617050318658-a9a3175e34cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZGl0b3JpYWwlMjBkZXNpZ258ZW58MXx8fHwxNzYzOTc3MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Packaging",
+    client: "Post Roast Club",
+    image: COFFEE_PRODUCT_IMAGES[5]
   },
   {
     id: 13,
-    name: "Art Direction",
+    name: "Roastery Tour",
     year: "2023",
-    type: "Creative Direction",
-    client: "Vision Agency",
-    image: "https://images.unsplash.com/photo-1536662788222-6927ce05daea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnQlMjBkaXJlY3Rpb258ZW58MXx8fHwxNzYzOTc3MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Content",
+    client: "Green Bean Media",
+    image: COFFEE_PRODUCT_IMAGES[0]
   },
   {
     id: 14,
-    name: "Brand System",
+    name: "Latte Series",
     year: "2024",
-    type: "Brand Identity",
-    client: "Start Co.",
-    image: "https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGlkZW50aXR5fGVufDF8fHx8MTc2Mzk3NzA3MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Social",
+    client: "Velvet Foam Studio",
+    image: COFFEE_PRODUCT_IMAGES[1]
   },
   {
     id: 15,
-    name: "Light & Shadow",
+    name: "Decaf Reserve",
     year: "2023",
-    type: "Photography",
-    client: "Art Collective",
-    image: "https://images.unsplash.com/photo-1586734073732-fd664fbd85c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHBob3RvZ3JhcGh5fGVufDF8fHx8MTc2Mzk2NjI3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Product",
+    client: "Night Owl Roasters",
+    image: COFFEE_PRODUCT_IMAGES[2]
   },
   {
     id: 16,
-    name: "Studio Culture",
+    name: "Barista Tools",
     year: "2024",
-    type: "Brand Photography",
-    client: "Design Studio",
-    image: "https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ24lMjBzdHVkaW98ZW58MXx8fHwxNzYzOTMxODk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    type: "Industrial",
+    client: "Steel & Steam",
+    image: COFFEE_PRODUCT_IMAGES[3]
   }
 ];
 

@@ -1,3 +1,5 @@
+import heroCoffee from '@/assets/images/home/coffee-01.jpg';
+
 import { ArrowLeft } from 'lucide-react';
 
 interface ProjectDetailProps {
@@ -42,9 +44,8 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                 Online Flagship Store
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Introducing {project.name}, a fashion and lifestyle brand by renowned designer, Astrid Andersen. 
-                This project showcases a complete brand identity system that merges contemporary aesthetics with 
-                timeless design principles.
+                Introducing {project.name}, a specialty coffee brand focused on origin, craft, and ritual.
+                This project showcases packaging, photography, and digital touchpoints built around a warm, tactile identity.
               </p>
             </div>
           </div>
@@ -53,7 +54,7 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
         {/* Hero Image */}
         <div className="w-full h-[80vh] mb-20">
           <img
-            src="https://images.unsplash.com/photo-1733324961657-8c60ff1e7c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwYnJhbmQlMjBoZXJvfGVufDF8fHx8MTc2Mzk3ODgwOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src={heroCoffee}
             alt={`${project.name} hero`}
             className="w-full h-full object-cover"
           />

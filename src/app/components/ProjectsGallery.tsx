@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { COFFEE_PRODUCT_IMAGES } from '../content/coffeeProductImages';
 
 interface Project {
   id: number;
@@ -11,54 +12,56 @@ interface Project {
   image: string;
 }
 
+const [img1, img2, img3, img4, img5, img6] = COFFEE_PRODUCT_IMAGES;
+
 const projects: Project[] = [
   {
     id: 1,
-    name: 'Brand Evolution',
-    client: 'Tech Startup Inc.',
+    name: 'Morning Ritual',
+    client: 'Roast & Co.',
     year: '2024',
-    services: ['Branding', 'Strategy'],
-    image: 'https://images.unsplash.com/photo-1758613654240-e531842faea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGJyYW5kaW5nJTIwcG9ydGZvbGlvfGVufDF8fHx8MTc2Mzk4NjI0M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    services: ['Branding', 'Packaging'],
+    image: img1,
   },
   {
     id: 2,
-    name: 'Digital Experience',
-    client: 'Fashion House',
+    name: 'Single Origin',
+    client: 'Highland Beans',
     year: '2024',
-    services: ['Web Design', 'Production'],
-    image: 'https://images.unsplash.com/photo-1669062897193-f8a4215c2033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzYzOTQ1MTI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    services: ['Photography', 'Web'],
+    image: img2,
   },
   {
     id: 3,
-    name: 'Product Launch',
-    client: 'Wellness Co.',
+    name: 'Bean to Cup',
+    client: 'Artisan Roasters',
     year: '2023',
-    services: ['Packaging Design', 'Branding'],
-    image: 'https://images.unsplash.com/photo-1669384536597-99ae8c881e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWNrYWdpbmclMjBkZXNpZ24lMjBwcm9kdWN0fGVufDF8fHx8MTc2MzkxNjc1Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    services: ['Campaign', 'Social'],
+    image: img3,
   },
   {
     id: 4,
-    name: 'Social Campaign',
-    client: 'Urban Brand',
+    name: 'Cold Brew Line',
+    client: 'Urban Café Lab',
     year: '2024',
-    services: ['Social Media', 'Content Creation'],
-    image: 'https://images.unsplash.com/photo-1607968565043-36af90dde238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGNhbXBhaWdufGVufDF8fHx8MTc2Mzk4NjI0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    services: ['Product', 'Launch'],
+    image: img4,
   },
   {
     id: 5,
-    name: 'Visual Identity',
-    client: 'Art Gallery',
+    name: 'House Blend',
+    client: 'Neighborhood Roastery',
     year: '2023',
-    services: ['Creative Direction', 'Photography'],
-    image: 'https://images.unsplash.com/photo-1611711522429-384bfeea79e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRpcmVjdGlvbiUyMHBob3RvZ3JhcGh5fGVufDF8fHx8MTc2Mzk4NjI0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    services: ['Identity', 'Merch'],
+    image: img5,
   },
   {
     id: 6,
-    name: 'Market Positioning',
-    client: 'Finance Group',
+    name: 'Espresso Bar',
+    client: 'Third Wave Collective',
     year: '2024',
-    services: ['Strategy', 'Branding', 'Production'],
-    image: 'https://images.unsplash.com/photo-1612541587845-9b5d36adc3ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMHN0cmF0ZWd5JTIwZGVzaWdufGVufDF8fHx8MTc2Mzk0NDI3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    services: ['Spatial', 'Content'],
+    image: img6,
   },
 ];
 
